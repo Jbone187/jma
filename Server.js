@@ -52,18 +52,18 @@ app.post('/send',function(req, res){
 nodemailer.createTestAccount((err, account) => {
    
     let transporter = nodemailer.createTransport({
-        host: '',
+        host: 'smtp.gmail.com',
         port: 587,
         secure: false, 
         auth: {
-            user: "", 
-            pass: ""
+            user: "jasen.green@gmail.com", 
+            pass: "jBonE1979!!!!"
         }
     });
 
 let mailOptions = {
 
-        to : '',
+        to : 'jay@jasengreen.com',
 
         subject : req.body.name +" "+ req.body.email,
 
