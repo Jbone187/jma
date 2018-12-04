@@ -52,7 +52,7 @@ app.post("/send", function(req, res) {
     });
 
     let mailOptions = {
-      to: "jay@jasengreen.com",
+      to: "",
 
       subject: req.body.name + " " + req.body.email,
 
