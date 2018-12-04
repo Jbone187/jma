@@ -46,8 +46,8 @@ app.post("/send", function(req, res) {
       port: 587,
       secure: false,
       auth: {
-        user: "jasen.green@gmail.com",
-        pass: "jBonE1979!!!!"
+        user: "",
+        pass: ""
       }
     });
 
