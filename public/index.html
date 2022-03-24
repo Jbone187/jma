@@ -15,21 +15,23 @@
  
 </head>
 
-<body data-spy="scroll" data-target="#mynavbar";,>
+ <div class="ana_bird" id="bird">
 
-    <!--Add video to the body element-->
+<body data-spy="scroll" data-target="#mynavbar">
+
+    <!--Add video to the body element
     <video autoplay loop muted id="bgv">
-        <source src="videos/82.mp4" type="video/mp4">
+        <source src="videos/fiber.mp4" type="video/mp4">
     </video>
-
+     -->
 
     <!--Create navigation bar with scollspy-->
     <nav role="navigation" class="navbar navbar-custom navbar-fixed-top" id="mynavbar">
 
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand">JMA Solutions
-             </a>
+                <a class="navbar-brand" href="https://jma.cloud/">JMA Solutions </a>
+
                 <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
 
                     <span class="sr-only">Toggle navigation</span>
@@ -82,7 +84,6 @@
         <div class="container">
             <div class="row">
 
-
                 <div class="col-md-4">
                    <a href="https://www.jmasolutions.net/vps-hosting.php"> <img src="images/h.png" class="aboutimage" ></a>
                     <h2>Cloud Hosting</h2>
@@ -115,7 +116,7 @@
           <div class="move" id="contact">
           
           
-            <h1>Contact Us</h>
+            <h1>Contact Us</h1>
     
             
             <div class="form-group">
@@ -149,37 +150,32 @@
 
                 <span id="messages"></span>
               </div>
-            </div>
-          </div>
-          
-          
+             </div>          
+         
           </form>
-
-
-
-
 
     <!-- Add a footer -->
     <div class="footer">
     <div class="container">
-        <p>&copy; JMA Solutions</p>
+        <p>JMA Solutions &copy; 2022</p>
     </div>
-    
     </div>
 
+</div>
 
-    
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.birds.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
 <script src="js/bootstrap.min.js"></script>
-   
-    
 <script src="js/typed.js"></script>
+
+
 <script>
     $(function(){
         
         $(".element").typed({
-            strings: ["Full Stack Web Development"],
+            strings: ["Web Development"],
             
             typeSpeed: 130,
             showCursor: false,
@@ -209,9 +205,9 @@ $(".navbar-nav li a[href^='#']").on('click', function(e) {
 
 </script>
 
+
 <script>
 
- 
 function checkScroll(){
     var startY = $('.navbar-custom').height() * 2; //The point where the navbar changes in px
 
@@ -243,6 +239,34 @@ if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
 }
 </script>
 
+
+<script>
+
+ VANTA.BIRDS({
+  el: "#bird",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: true,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  colorMode: "lerpGradient"
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 <!--Post Request from Contact From Not Using
 <script>
 $(document).ready(function(){
@@ -257,9 +281,9 @@ $(document).ready(function(){
     });
 });
 </script>
--->
 
 
 </body>
 
 </html>
+
