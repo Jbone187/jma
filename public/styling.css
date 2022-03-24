@@ -1,17 +1,21 @@
-/*Body:
+6./*Body:
 Give the body element a relative postion for the scrollspy to work. Add a font family to the whole page*/
 
 body{
-    font-family:   'Frank Ruhl Libre', sans-serif;
-    position: relative;
+
+    font-family: 'Frank Ruhl Libre', sans-serif;
+
 }
 
-/*.navbar.scrolled {
+
+.navbar.scrolled {
     background: rgb(98, 88, 107); 
-    background: rgba(98, 88, 107, 0.3); //NON-IE
-      
-}
-*/
+    background: rgba(98, 88, 107, 0.3); 
+     
+} 
+
+
+
 big{
 margin-top: 75%;
 font-size: 70px;
@@ -19,6 +23,7 @@ font-size: 70px;
 
 el{
 font-size: 35px;
+padding: 10px 10px;
 }
 
 
@@ -38,24 +43,35 @@ video#bgv{
         
 }
 
+
+
+
+.ana_bird {
+  
+        height: 100%;
+  width: 100%;
+font-family: 'Frank Ruhl Libre', sans-serif;
+background-color: #041c2a;
+
+} 
+
 /*Video dosen't work in small devices
 hide the video and set picture as background (use media queries)
 make it spread across the whole webpage*/
-
+/*
 @media (max-width:768px) {
     body{
-        
-        background: url(images/2go5QZs.jpeg) center center fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-        
+  
+    height: 100%;
+  width: 100%;        
+               
     }
     #bgv{
         display: none;
     }
 }
 
-
+*/
 /*Style the Home section and elements inside it:
 reduce the margin-bottom of h1 and h2.
 style the button and its hoover state*/
@@ -85,13 +101,15 @@ style the button and its hoover state*/
 }
 
 #home .btn:hover{
-    background-color: rgba(98, 88, 107, 0.5);
+  /*  background-color: rgba(98, 88, 107, 0.5);*/
+background-color: transparent;
    
 }
 
 /*Style the About section:
 adding padding-top so that the nav link is active before the carousel hits the top boarder of the page
 Limit its width in big devices to 1000px
+
 make heading bold and set the dimensions of picture*/
 
 .container{
@@ -131,58 +149,15 @@ make heading bold and set the dimensions of picture*/
 }
 
 
-/*Style the promise section:
-add padding-top for early activation of the nav link.
-set the width of the carousel and center it
-set the height of pitures and center them inside the carousel items
-Move the carousel caption under the pictures*/
-#promise{
-    padding-top: 100px;
-}
-#myCarousel{
-    width: 68%;
-    margin: 0 auto;
-}
-.carsousel-inner .item img{
-    height: 300px;
-    margin: 0 auto;
-}
-.carousel-caption{
-    position: relative;
-    left: auto;
-    right: auto;
-    height: 200px;
-}
-/*Style the picture and nav-brand for different screens*/
-@media (max-width:768px) {
-    .carousel-inner .item img{
-        height: 300px;
-}
-.carousel-inner h2{
-    font-size: 23px;
-}
-    
-}
 
-@media (max-width:400px) {
-    .carousel-inner .item img{
-        height: 200px;
-}
-.carousel-inner h2{
-    font-size: 17px;
-}
-    .navbar-custom .navbar-brand{
-        font-size: 12px;
-    }
-    
-
-}/*Style Footer*/
+/*Style Footer*/
 .footer{
     background-color:rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px 0;
     margin-top: 500px;
     font-size: 15px;
+
 }
 
 #contact {
@@ -201,6 +176,8 @@ Move the carousel caption under the pictures*/
     background-color: rgba(98, 88, 107, 0.5);
    
 }
+
+
 
 
 
@@ -264,10 +241,10 @@ Move the carousel caption under the pictures*/
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #dddddd;
+  background-color: transparent;
 }
 .navbar-custom .navbar-toggle .icon-bar {
-  background-color: #cccccc;
+  background-color: transparent;
 }
 .navbar-custom .navbar-collapse,
 .navbar-custom .navbar-form {
@@ -322,6 +299,5 @@ Move the carousel caption under the pictures*/
 .navbar-custom .navbar-link:hover {
   color: #c0c0c0;
 }
-
 
 
